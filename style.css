@@ -95,7 +95,7 @@ header {
   padding: 20px;
 }
 
-.produkter {
+.product_container {
   display: grid;
   grid-template-columns: repeat(4, 345px);
   list-style: none;
@@ -103,7 +103,7 @@ header {
   padding: 20px;
 }
 
-.produkter img {
+.product_container img {
   width: 300px;
 }
 
