@@ -137,25 +137,25 @@ header {
   margin-left: 19px;
 }
 
-.produkt img {
+#productcontainer img {
   width: 420px;
 }
 
-.produkt h2 {
+#productcontainer h2 {
   font-family: "Anton", sans-serif;
   color: #506293;
   font-size: 2rem;
   font-weight: 800;
 }
 
-.produkt h3 {
+#productcontainer h3 {
   font-family: "Anton", sans-serif;
   color: #2c2c2c80;
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.produkt p {
+#productcontainer p {
   color: #2c2c2c;
   font-size: 1rem;
   font-weight: 400;
@@ -230,12 +230,12 @@ header {
 }
 
 .pib img {
-  width: 20px;
+  width: 10px; /* justér efter behov */
 }
 
 .pib {
   display: grid;
-  grid-template-columns: repeat(2, 1fr 50px);
+  grid-template-columns: 1fr 50px; /* én tekstknap + én lille kolonne til ikonet */
   list-style: none;
   margin-top: 10px;
   gap: 10px;
