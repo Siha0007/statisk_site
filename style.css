@@ -128,6 +128,27 @@ header {
   margin-top: 6px;
 }
 
+.product_container h3 {
+  font-family: "Anton", sans-serif;
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.product_container h4 {
+  font-family: Inter;
+  color: #2c2c2c80;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.product_container p {
+  color: #2c2c2c;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
 .sale h2 {
   font-family: "Anton", sans-serif;
   color: #2c2c2c;
@@ -244,4 +265,33 @@ header {
 .pib a:hover {
   background-color: #506293;
   color: #2c2c2c;
+}
+
+.soldout .imageContainer p {
+  display: inline-block;
+  color: red;
+  rotate: 10deg;
+  font-size: 270%;
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  /* opacity: 1; */
+}
+
+.imageContainer p {
+  display: none;
+}
+
+.imageContainer {
+  display: grid;
+  > * {
+    place-self: center center;
+    grid-area: 1/1;
+  }
+}
+
+.produkt1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* centrerer både billede og tekst */
+  text-align: left; /* gør at teksten også centreres */
 }
