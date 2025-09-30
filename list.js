@@ -1,6 +1,12 @@
 console.log("hej fra JS");
-const productContainer = document.querySelector(".product_container");
-getData("https://kea-alt-del.dk/t7/api//products?subcategory=Saree");
+
+const category = new URLSearchParams(window.location.search).get("category");
+const url = `https://kea-alt-del.dk/t7/api/products?category=${category}`;
+//
+getData(url);
+
+const productContainer = document.querySelector("#product_container");
+
 function getData(url) {
   fetch(url).then((res) => res.json().then((data) => showProducts(data)));
 }
@@ -13,8 +19,9 @@ function showProducts(products) {
     productContainer.innerHTML += `   <div class="produkt1 ${product.soldout === 1 ? "soldout" : ""}"> 
 
 
-<div class = "imageContainer">
-                <li> <a href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
+<div class= "imageContainer">
+
+                <li> <a href="produkt.html?id=${product.id}"><img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp"
 
                             alt="Hvid hoodie"></a></li>
 <p>SOLD OUT</p>

@@ -52,7 +52,7 @@ header {
   margin-top: 100px;
 }
 
-.sortbox h2 {
+#category_list_container h2 {
   font-family: "Anton", sans-serif;
   color: #e6e3da;
   font-size: 3rem;
@@ -60,7 +60,7 @@ header {
   border-color: #3d2112;
 }
 
-.kategorier a {
+.knap {
   font-family: "Anton", sans-serif;
   color: #2c2c2c;
   font-size: 2rem;
@@ -77,25 +77,19 @@ header {
   border: 3px solid;
 }
 
-.kategorier a:hover {
+#category_list_container a:hover {
   background-color: #506293;
   color: #e6e3da;
 }
 
-.kategorier {
+#category_list_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   gap: 20px;
 }
 
-.sortbox {
-  margin-top: 40px;
-  background-color: #e6e3da;
-  padding: 20px;
-}
-
-.product_container {
+#product_container {
   display: grid;
   grid-template-columns: repeat(4, 345px);
   list-style: none;
@@ -103,25 +97,25 @@ header {
   padding: 20px;
 }
 
-.product_container img {
+#product_container img {
   width: 300px;
 }
 
-.produkter h3 {
+.produkth3 {
   font-family: "Anton", sans-serif;
   color: #2c2c2c;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.produkter h4 {
+.produkt h4 {
   font-family: Inter;
   color: #2c2c2c80;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.produkter p {
+.produkt p {
   color: #2c2c2c;
   font-size: 1rem;
   font-weight: 400;
@@ -135,7 +129,7 @@ header {
   font-weight: 700;
 }
 
-.product_container h4 {
+#product_container h4 {
   font-family: Inter;
   color: #2c2c2c80;
   font-size: 1rem;
@@ -183,27 +177,7 @@ header {
   margin-top: 20px;
 }
 
-.produkt2 h5 {
-  font-family: "Anton", sans-serif;
-
-  position: absolute;
-  color: #ff3e3e;
-  font-size: 5.2rem;
-  margin-left: 12px;
-  margin-top: 150px;
-}
-
-.produkt3 h5 {
-  font-family: "Anton", sans-serif;
-  position: absolute;
-  color: #f9e350;
-  font-size: 2.2rem;
-  margin-left: 199px;
-  margin-top: 347px;
-  background: #333333;
-}
-
-.produkt {
+.billede {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-top: 20px;
@@ -251,12 +225,12 @@ header {
 }
 
 .pib img {
-  width: 10px; /* justér efter behov */
+  width: 10px;
 }
 
 .pib {
   display: grid;
-  grid-template-columns: 1fr 50px; /* én tekstknap + én lille kolonne til ikonet */
+  grid-template-columns: 1fr 50px;
   list-style: none;
   margin-top: 10px;
   gap: 10px;
@@ -274,7 +248,7 @@ header {
   font-size: 270%;
   border: 2px solid red;
   border-radius: 0.5rem;
-  /* opacity: 1; */
+  place-self: center center;
 }
 
 .imageContainer p {
@@ -283,15 +257,15 @@ header {
 
 .imageContainer {
   display: grid;
-  > * {
-    place-self: center center;
-    grid-area: 1/1;
-  }
 }
 
-.produkt1 {
+.imageContainer > * {
+  grid-area: 1/1;
+}
+
+.billede {
   display: flex;
   flex-direction: column;
-  align-items: start; /* centrerer både billede og tekst */
-  text-align: left; /* gør at teksten også centreres */
+  align-items: start;
+  text-align: left;
 }
