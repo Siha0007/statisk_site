@@ -23,9 +23,12 @@ function show(data) {
         <h3>${data.usagetype}</h3>
         <h2>${data.productdisplayname}</h2>
         <p>${data.price} kr.</p>
-        <p>${data.basecolor}</p>
 
 
+
+
+
+        
     </div>
   `;
 }

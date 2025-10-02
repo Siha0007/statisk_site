@@ -17,6 +17,8 @@ function showCategory(categories) {
 
     category_list_container.innerHTML += `
 
+
+
   <a class="knap" href="produktliste.html?category=${category.category}">
     ${category.category}
   </a>
