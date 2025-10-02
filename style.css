@@ -21,35 +21,37 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 
-.logo {
-  width: 350px;
+.logo img {
+  width: 204px;
 }
 
 .menu a {
   text-decoration: none;
   font-family: "Anton", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
-  color: #3d2112;
+  color: #000000;
 }
 
 .menu a:hover {
-  color: #506293;
+  color: #ff1f1f;
 }
 
 .menu {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
+  gap: 157px;
+  margin-top: 80px;
 }
 
 .velkommen h1 {
   font-family: "Anton", sans-serif;
-  color: #506293;
+  color: #000000;
   font-size: 5rem;
   font-weight: 600;
-  margin-top: 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
 }
 
 #category_list_container h2 {
@@ -78,7 +80,7 @@ header {
 }
 
 #category_list_container a:hover {
-  background-color: #506293;
+  background-color: #f32121;
   color: #e6e3da;
 }
 
@@ -89,7 +91,7 @@ header {
   gap: 20px;
 }
 
-#product_container {
+.product_container {
   display: grid;
   grid-template-columns: repeat(4, 345px);
   list-style: none;
@@ -97,25 +99,25 @@ header {
   padding: 20px;
 }
 
-#product_container img {
+.product_container img {
   width: 300px;
 }
 
-.produkth3 {
+.produkt1 h3 {
   font-family: "Anton", sans-serif;
   color: #2c2c2c;
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.produkt h4 {
+.produkt1 h4 {
   font-family: Inter;
   color: #2c2c2c80;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.produkt p {
+.produkt1 p {
   color: #2c2c2c;
   font-size: 1rem;
   font-weight: 400;
@@ -129,7 +131,7 @@ header {
   font-weight: 700;
 }
 
-#product_container h4 {
+.product_container h4 {
   font-family: Inter;
   color: #2c2c2c80;
   font-size: 1rem;
@@ -210,7 +212,7 @@ header {
   color: #2c2c2c;
 }
 
-.pib a {
+.tekst a {
   font-family: "Anton", sans-serif;
   color: #f9f4f4;
   font-size: 1rem;
@@ -226,14 +228,6 @@ header {
 
 .pib img {
   width: 10px;
-}
-
-.pib {
-  display: grid;
-  grid-template-columns: 1fr 50px;
-  list-style: none;
-  margin-top: 10px;
-  gap: 10px;
 }
 
 .pib a:hover {
@@ -268,4 +262,45 @@ header {
   flex-direction: column;
   align-items: start;
   text-align: left;
+}
+
+.buttons button {
+  color: #2c2c2c;
+  background-color: #f9f4f4;
+  font-family: "Anton", sans-serif;
+  border: 0.5rem;
+  font-size: -3.8rem;
+  border-radius: 0.5rem;
+  width: 73px;
+  height: 53px;
+}
+
+.buttons button:hover {
+  background-color: #e8534e;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: -84px;
+}
+.discounted_container {
+  display: none;
+}
+
+.discount .discounted_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discount .price {
+  text-decoration: overline;
+}
+
+.discounted_container p:nth-child(2) {
+  background-color: #e8534e;
+  color: white;
+  padding: 10px;
+  font-size: 80%;
 }
